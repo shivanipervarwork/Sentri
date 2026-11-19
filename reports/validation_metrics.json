@@ -1,0 +1,38 @@
+{
+    "project": "Sentri",
+    "evaluation_dataset": "validation",
+    "training_method": "All training fraud cases plus randomly sampled legitimate cases",
+    "random_state": 42,
+    "training_rows_used": 203661,
+    "training_fraud_count": 3643,
+    "validation_rows": 980416,
+    "validation_fraud_count": 564,
+    "legitimate_sampling_probability": 0.04484361238616449,
+    "best_model_by_average_precision": "xgboost",
+    "model_results": {
+        "logistic_regression": {
+            "average_precision": 0.008203761360315675,
+            "precision": 0.013694975544686527,
+            "recall": 0.2730496453900709,
+            "f1_score": 0.026081802015411975,
+            "threshold": 0.956747523322623,
+            "true_negatives": 968761,
+            "false_positives": 11091,
+            "false_negatives": 410,
+            "true_positives": 154,
+            "alerts_generated": 11245
+        },
+        "xgboost": {
+            "average_precision": 0.3119116550850439,
+            "precision": 0.7755102040816326,
+            "recall": 0.2695035460992908,
+            "f1_score": 0.4,
+            "threshold": 0.9856686592102051,
+            "true_negatives": 979808,
+            "false_positives": 44,
+            "false_negatives": 412,
+            "true_positives": 152,
+            "alerts_generated": 196
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "project": "Sentri",
+    "evaluation_type": "Held-out chronological test",
+    "model": "xgboost",
+    "model_sha256": "148ad27233182c2674831b8cb16e7e85617d0ce2fd62be15ec5cfd0684037d72",
+    "model_selection_metric": "validation_average_precision",
+    "threshold_selection": "validation_f1_maximum",
+    "model_retrained_on_test": false,
+    "test_metrics": {
+        "test_transactions": 918617,
+        "actual_fraud": 4006,
+        "fraud_prevalence": 0.004360903401526425,
+        "threshold_from_validation": 0.9856686592102051,
+        "average_precision": 0.3820610094838248,
+        "precision": 0.6178010471204188,
+        "recall": 0.2945581627558662,
+        "f1_score": 0.39891818796484113,
+        "true_positives": 1180,
+        "false_positives": 730,
+        "true_negatives": 913881,
+        "false_negatives": 2826,
+        "alerts_generated": 1910,
+        "alert_rate": 0.0020792125553957745
+    }
+}
